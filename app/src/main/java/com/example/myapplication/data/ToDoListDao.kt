@@ -15,9 +15,9 @@ interface ToDoListDao {
     @Update
     fun updateToDoData(toDoListDataModel: ToDoListDataModel.ToDoList)
 
-    @Query(DataBaseQueries.Queries.DELETE_FROM_ID)
+    @Query(DataBaseQueries.ToDoTableQueries.DELETE_FROM_ID)
     fun deleteToDoData(id: Int)
 
-    @Query(DataBaseQueries.Queries.FETCH_ALL_TODO)
+    @Query(DataBaseQueries.ToDoTableQueries.FETCH_ALL_TODO)
     fun getAllToDoListData(): LiveData<List<ToDoListDataModel.ToDoList>>
 }

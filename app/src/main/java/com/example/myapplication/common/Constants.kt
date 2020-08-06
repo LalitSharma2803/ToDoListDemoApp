@@ -1,5 +1,6 @@
 package com.example.myapplication.common
 
+// This is a common class for constants all APP level constants are place here
 class Constants {
     interface IntentExtras {
         companion object {

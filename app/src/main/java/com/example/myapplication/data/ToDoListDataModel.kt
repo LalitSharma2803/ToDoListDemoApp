@@ -6,8 +6,10 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.io.Serializable
 
+//Apps table model are placed here
 class ToDoListDataModel {
 
+//    To Do List table
     @Entity(tableName = "to_do_list")
     data class ToDoList(
 
