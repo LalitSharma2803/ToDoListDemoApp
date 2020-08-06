@@ -1,3 +1,35 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Demo TO DO</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="save">Save</string>
+    <string name="nothing_to_do">Nothing to do</string>
+    <string name="enter_description_error">Please enter come description</string>
+    <string name="description">Description</string>
+    <string name="description_error">Please enter description</string>
+    <string name="new_data_saved">To do saved</string>
+    <string name="old_data_updated">To do updated</string>
+    <string name="select_priority">Select Priority</string>
+    <string name="type_of_task">Type Of Task</string>
+
+    <string-array name="priority">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+
+    <string-array name="task_type">
+        <item>Personal</item>
+        <item>Office</item>
+        <item>Home</item>
+        <item>Regular</item>
+    </string-array>
+
 </resources>

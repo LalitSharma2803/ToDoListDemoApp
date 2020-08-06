@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etToDoDetails"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="top|start"
+        android:hint="@string/description"
+        android:lines="6"
+        android:padding="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTaskType"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/type_of_task"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etToDoDetails"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+    <Spinner
+        android:id="@+id/spTaskType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvTaskType"
+        app:layout_constraintTop_toBottomOf="@id/etToDoDetails" />
+
+    <TextView
+        android:id="@+id/tvTaskPriority"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/select_priority"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTaskType"/>
+
+    <Spinner
+        android:id="@+id/spPriority"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTaskPriority"
+        app:layout_constraintTop_toBottomOf="@id/tvTaskType" />
+
+    <Button
+        android:id="@+id/btSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="@string/save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spPriority" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
